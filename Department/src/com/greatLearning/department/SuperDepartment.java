@@ -1,24 +1,30 @@
 package com.greatLearning.department;
 
-public class SuperDepartment {
+import com.greatLearning.constants.*;
+
+public class SuperDepartment  {
 
 	public String departmentName() {
+
 		System.out.print("Welcome to ");
-		return "Super Department";
+		return Constants.SUPER_DEPARTMENT;
 	}
+	
 
 	public String getTodaysWork() {
 
-		String getTodaysWork = "No Work as of now";
-		return getTodaysWork;
-
+		return Constants.SUPER_GETTODAYSWORK;
 	}
+	
 
 	public String getWorkDeadLine() {
-		return "Nil";
+
+		return Constants.SUPER_GETWORKDEADLINE;
 	}
+	
 
 	public String isTodayAHoliday() {
-		return "Today is not a Holiday";
+
+		return Constants.SUPER_ISTODAYAHOLIDAY;
 	}
 }

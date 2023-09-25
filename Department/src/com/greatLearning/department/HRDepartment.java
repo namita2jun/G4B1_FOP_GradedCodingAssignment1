@@ -1,26 +1,31 @@
 package com.greatLearning.department;
 
+import com.greatLearning.constants.Constants;
+
 public class HRDepartment extends SuperDepartment {
 
 	public String departmentName() {
+
 		super.departmentName();
-		return "Hr Department";
+		return Constants.HR_DEPARTMENT;
 	}
+	
 
 	public String getTodaysWork() {
 
-		String getTodaysWork = "Fill today’s timesheet and mark your attendance";
-		return getTodaysWork;
-
+		return Constants.HR_GETTODAYSWORK;
 	}
+	
 
 	public String getWorkDeadLine() {
-		return "Complete by EOD";
+
+		return Constants.GETWORKDEADLINE;
 	}
 	
+
 	public String doActivity() {
-		 return "team Lunch";
+
+		return Constants.HR_DOACTIVITY;
 	}
-	
 
 }

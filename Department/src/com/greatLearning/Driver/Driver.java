@@ -10,7 +10,7 @@ import com.greatLearning.department.TechDepartment;
 public class Driver {
 
 	/**
-	 * @param This method is used for dynamic selection of departments by the user.
+	 * @param This method is used for dynamic selection of departments by the user. User can choose the option from the given departments and print the output accordingly
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -25,7 +25,7 @@ public class Driver {
 
 		int option = sc.nextInt();
 
-		switch(option) {
+		switch (option) {
 		case 1: {
 			SuperDepartment sd = new SuperDepartment();
 			System.out.println(sd.departmentName());
@@ -34,7 +34,7 @@ public class Driver {
 			System.out.println(sd.isTodayAHoliday());
 			break;
 		}
-		case 2:{
+		case 2: {
 			AdminDepartment adminDepartment = new AdminDepartment();
 			System.out.println(adminDepartment.departmentName());
 			System.out.println(adminDepartment.getTodaysWork());
@@ -42,7 +42,7 @@ public class Driver {
 			System.out.println(adminDepartment.isTodayAHoliday());
 			break;
 		}
-		case 3:{
+		case 3: {
 			HRDepartment hrDepartment = new HRDepartment();
 			System.out.println(hrDepartment.departmentName());
 			System.out.println(hrDepartment.doActivity());
@@ -52,7 +52,7 @@ public class Driver {
 			break;
 
 		}
-		case 4:{
+		case 4: {
 			TechDepartment techDepartment = new TechDepartment();
 			System.out.println(techDepartment.departmentName());
 			System.out.println(techDepartment.getTodaysWork());
@@ -68,7 +68,6 @@ public class Driver {
 
 		}
 		sc.close();
-
 
 	}
 

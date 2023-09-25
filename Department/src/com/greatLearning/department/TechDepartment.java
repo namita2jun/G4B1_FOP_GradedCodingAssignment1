@@ -1,24 +1,30 @@
 package com.greatLearning.department;
 
+import com.greatLearning.constants.Constants;
+
 public class TechDepartment extends SuperDepartment {
-	
+
 	public String departmentName() {
+
 		super.departmentName();
-		return "Tech Department";
+		return Constants.TECH_DEPARTMENT;
 	}
+
 
 	public String getTodaysWork() {
 
-		String getTodaysWork = "Complete coding of module 1";
-		return getTodaysWork;
-
+		return Constants.TECH_GETTODAYSWORK;
 	}
+
 
 	public String getWorkDeadLine() {
-		return "Complete by EOD";
+
+		return Constants.GETWORKDEADLINE;
 	}
-	
+
+
 	public String getTechStackInformation() {
-		 return "core Java";
+
+		return Constants.TECH_GETTECHSTACKINFO;
 	}
 }
